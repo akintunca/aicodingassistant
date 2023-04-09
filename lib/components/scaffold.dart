@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../getx.dart';
 import 'floating_button.dart';
@@ -44,8 +45,34 @@ class MyScaffold extends StatelessWidget {
                 clicked: controller.floatingButtonClicked.value,
                 height: controller.outputWidth.value,
                 width: controller.outputWidth.value,
-                text: inputTextController.text))
+                text: inputTextController.text)),
+                Align(
+              alignment: Alignment.bottomRight,
+              child: TextButton(
+                onPressed: () => launchLink("https://github.com/akintunca/aicodingassistant"),
+                child: Container(
+                    alignment: Alignment.center,
+                    width: 110,
+                    height: 20,
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(57, 43, 255, 0),
+                        borderRadius: BorderRadius.circular(10)),
+                    child: const Text(
+                      "by Akın Tunca",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 50, 50, 50),
+                          fontSize: 15),
+                    )),
+              ),
+            )
           ],
         ));
+  }
+}
+
+Future<void> launchLink(url) async {
+  if (!await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
+    throw Exception('Could not launch $url');
   }
 }
