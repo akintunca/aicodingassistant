@@ -17,11 +17,11 @@ When the app is opened, it will display a single page with an input box in the m
 
 At the bottom center of the page, there is a button labeled "AI." When this button is clicked, it will change its label to "X" and send a request to the API to obtain assistance for the entered code or question. Once the request is sent, the input box will be replaced by an output box displaying the AI's response.
 
-    1 - Clone this repository using the command `**git clone https://github.com/akintunca/aicodingassistant**`
-    2 - Move into the cloned repository using `**cd aicodingassistant**`
-    3 - Install the required packages using `**flutter pub get**`
-    4 - Add your own OpenAI APIkey to the following file `**...\lib\gpt-3.5-turbo\api_key.dart**`
-    5 - Run the app using `**flutter run**`
+    1 - Clone this repository using the command `git clone https://github.com/akintunca/aicodingassistant`
+    2 - Move into the cloned repository using `cd aicodingassistant`
+    3 - Install the required packages using `flutter pub get`
+    4 - Add your own OpenAI APIkey to the following file `...\lib\gpt-3.5-turbo\api_key.dart`
+    5 - Run the app using `flutter run`
 
 ## Technology Stack
 
@@ -47,7 +47,7 @@ The AIcodingassistant app uses the following technologies:
 
 ## Demo Video
 
-AIcodingassistant Demo Video
+[![AIcodingassistant](https://i9.ytimg.com/vi_webp/0CvcN3GK2N8/mq2.webp?sqp=CMTuy6EG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgRShnMA8=&rs=AOn4CLCbUhsb7WD3DkJ-bGRwXVXnOCYPDA)](https://youtu.be/0CvcN3GK2N8 "AIcodingassistant")
 
 ## Contributing
 
